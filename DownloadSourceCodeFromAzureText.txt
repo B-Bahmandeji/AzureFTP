@@ -1,0 +1,14 @@
+
+AzureFTP
+
+To use FTP on Azure from Portal site for your uploaded application follow these instructions.
+Goto  Azure portal, open your App Service, on the top row, click on “Download publish profile” to download publish file on your local computer. This file has information’s to setup FTP.
+
+Open the file and find info for FTP, search for publishUrl="ftps:// pick waws-xxx.windows.net part of this uri for host and then username and serPWD to set your FTP tools for ftp actions:
+
+publishUrl="ftps://waws-xxx.windows.net/site/wwwroot"
+userName="xxx\$xxx" 
+serPWD="xxx … xxx"
+
+Then from FTP tool, Azure side, open site folder and click on wwwroot folder. The file list appears, pick any file to download like (log file nlog-all-2023-02-11.log)
+
